@@ -1,6 +1,6 @@
 package com.prog_avanzada;
 
-import com.prog_avanzada.model.Book; // Asegúrate del import correcto
+import com.prog_avanzada.model.Book;
 import com.prog_avanzada.services.interfaces.IBookRepository;
 import jakarta.enterprise.inject.se.SeContainer;
 import jakarta.enterprise.inject.se.SeContainerInitializer;
