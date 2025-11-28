@@ -1,0 +1,41 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+             version="2.1">
+
+    <persistence-unit name="avanzada">
+        <description>
+            Persistence unit for Hibernate User Guide
+        </description>
+
+<!--        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>-->
+        <class>com.programacion.avanzada.model.Book</class>
+        <class>com.programacion.avanzada.model.Author</class>
+
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver"
+                      value="org.postgresql.Driver" />
+
+            <property name="jakarta.persistence.jdbc.url"
+                      value="jdbc:postgresql://localhost:5433/prograavanzada" />
+
+            <property name="jakarta.persistence.jdbc.user"
+                      value="postgres" />
+
+            <property name="jakarta.persistence.jdbc.password"
+                      value="labcom,2015" />
+
+<!--            <property name="hibernate.show_sql"-->
+<!--                      value="true" />-->
+
+<!--            <property name="hibernate.format_sql"-->
+<!--                      value="true" />-->
+
+<!--            <property name="hibernate.highlight_sql"-->
+<!--                      value="true" />-->
+        </properties>
+
+    </persistence-unit>
+
+</persistence>
