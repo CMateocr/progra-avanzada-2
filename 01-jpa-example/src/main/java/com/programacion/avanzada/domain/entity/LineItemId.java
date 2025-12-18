@@ -1,4 +1,4 @@
-package com.programacion.avanzada.infrastructure.persistence;
+package com.programacion.avanzada.domain.entity;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
