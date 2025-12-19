@@ -29,13 +29,6 @@ import java.util.List;
 @Table(name = "purchase_orders")
 public class PurchaseOrder {
 
-  enum Status {
-    PLACED,
-    DELIVERED,
-    CANCELED,
-    ONGOING,
-  }
-
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
