@@ -1,0 +1,19 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <persistence-unit name="avanzada">
+
+        <class>com.programacion.avanzada.domain.entity.Author</class>
+        <class>com.programacion.avanzada.domain.entity.Book</class>
+        <class>com.programacion.avanzada.domain.entity.Inventory</class>
+        <class>com.programacion.avanzada.domain.entity.Customer</class>
+        <class>com.programacion.avanzada.domain.entity.PurchaseOrder</class>
+        <class>com.programacion.avanzada.domain.entity.LineItem</class>
+
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5433/prograavanzada"/>
+            <property name="jakarta.persistence.jdbc.user" value="postgres"/>
+            <property name="jakarta.persistence.jdbc.password" value="labcom,2015"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+        </properties>
+    </persistence-unit>
+</persistence>
